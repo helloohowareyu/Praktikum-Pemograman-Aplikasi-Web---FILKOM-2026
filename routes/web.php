@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 
 // READ: Detail satu post (publik)
-Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show')->where('post', '[0-9]+');
 
 // =====================
 // ROUTES AUTENTIKASI - Form login & register (hanya untuk tamu/belum login)
