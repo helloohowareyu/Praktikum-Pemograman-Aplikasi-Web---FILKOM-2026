@@ -53,6 +53,28 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+## Docker Deployment
+
+This project includes a `Dockerfile` for PHP 8.4 and a `docker-compose.yml` for local development.
+
+To build and run the app locally with Docker:
+
+```bash
+docker compose build
+docker compose up -d
+```
+
+Then visit `http://localhost:8000`.
+
+If you only need to build the Docker image and run the container directly:
+
+```bash
+docker build -t laravel-app .
+docker run --rm -p 8000:8000 laravel-app
+```
+
+The app will start with `php artisan serve --host=0.0.0.0 --port=8000`.
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
