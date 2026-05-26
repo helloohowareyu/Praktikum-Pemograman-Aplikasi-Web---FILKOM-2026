@@ -32,8 +32,9 @@ COPY composer.json composer.lock ./
 RUN composer install --prefer-dist --no-dev --no-scripts --no-progress --no-interaction
 COPY . .
 COPY --from=node-builder /var/www/html/public/build ./public/build
-RUN if [ ! -f .env ]; then cp .env.example .env; fi \
-    && php artisan key:generate --force
+RUN mkdir -p database && touch database/database.sqlite && \
+    if [ ! -f .env ]; then cp .env.example .env; fi && \
+    php artisan key:generate --force
 
 FROM php:8.4-fpm-bullseye AS runtime
 RUN apt-get update && apt-get install -y --no-install-recommends \
