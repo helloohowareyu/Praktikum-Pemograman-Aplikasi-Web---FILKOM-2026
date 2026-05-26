@@ -1,0 +1,2 @@
+total 16
+-rw-rw-r-- 1 helloohowareyu helloohowareyu 12466 May 26 09:58 laravel_crud_20260526_095823.sql

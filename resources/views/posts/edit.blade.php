@@ -6,7 +6,7 @@
 @section('content')
     <div style="max-width:600px; margin:0 auto;">
         <div class="card">
-            <h1 style="font-size:1.4rem; margin-bottom:20px;">🖊️ Edit Post</h1>
+            <h1 style="font-size:1.4rem; margin-bottom:20px;">Edit Post</h1>
 
             {{--
                 Form update menggunakan method POST dengan spoofing @method('PUT')

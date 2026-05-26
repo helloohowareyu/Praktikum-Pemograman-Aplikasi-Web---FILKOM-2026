@@ -75,6 +75,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $this->authorize('update', $post);
         return view('posts.edit', compact('post'));
     }
 
@@ -88,6 +89,9 @@ class PostController extends Controller
             'title' => 'required|string|max:255',
             'body'  => 'required|string',
         ]);
+
+        // Authorization: pastikan user yang sedang login boleh mengubah post ini
+        $this->authorize('update', $post);
 
         // Update kolom title dan body
         $post->update([
@@ -107,6 +111,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
+        $this->authorize('delete', $post);
+
         $post->delete(); // Hapus post dari database
 
         return redirect()->route('posts.index')->with('success', 'Post berhasil dihapus!');

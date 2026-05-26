@@ -6,7 +6,7 @@
 @section('content')
 <div style="max-width:400px; margin:0 auto;">
     <div class="card">
-        <h1 style="margin-bottom:20px; font-size:1.4rem;">📝 Buat Akun Baru</h1>
+        <h1 style="margin-bottom:20px; font-size:1.4rem;">Buat Akun Baru</h1>
 
         {{-- Form registrasi - submit ke route 'register' dengan method POST --}}
         <form action="{{ route('register') }}" method="POST">

@@ -1,0 +1,17 @@
+ M app/Http/Controllers/Controller.php
+ M app/Http/Controllers/PostController.php
+ M app/Providers/AppServiceProvider.php
+ M phpunit.xml
+ M resources/views/auth/login.blade.php
+ M resources/views/auth/register.blade.php
+ M resources/views/layouts/app.blade.php
+ M resources/views/posts/create.blade.php
+ M resources/views/posts/edit.blade.php
+ M resources/views/posts/index.blade.php
+ M tests/Feature/ExampleTest.php
+?? app/Policies/
+?? database/factories/PostFactory.php
+?? db_backups/
+?? report_screenshots/
+?? tests/Feature/AuthTest.php
+?? tests/Feature/PostCrudTest.php

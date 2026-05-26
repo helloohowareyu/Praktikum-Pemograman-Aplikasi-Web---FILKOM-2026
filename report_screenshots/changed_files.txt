@@ -1,0 +1,11 @@
+app/Http/Controllers/Controller.php
+app/Http/Controllers/PostController.php
+app/Providers/AppServiceProvider.php
+phpunit.xml
+resources/views/auth/login.blade.php
+resources/views/auth/register.blade.php
+resources/views/layouts/app.blade.php
+resources/views/posts/create.blade.php
+resources/views/posts/edit.blade.php
+resources/views/posts/index.blade.php
+tests/Feature/ExampleTest.php

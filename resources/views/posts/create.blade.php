@@ -6,7 +6,7 @@
 @section('content')
     <div style="max-width:600px; margin:0 auto;">
         <div class="card">
-            <h1 style="font-size:1.4rem; margin-bottom:20px;">✏️ Tambah Post Baru</h1>
+            <h1 style="font-size:1.4rem; margin-bottom:20px;">Tambah Post Baru</h1>
 
             {{-- Form create - submit ke route 'posts.store' dengan method POST --}}
             <form action="{{ route('posts.store') }}" method="POST">

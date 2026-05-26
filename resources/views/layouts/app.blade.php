@@ -80,7 +80,7 @@
 
 {{-- Navbar navigasi --}}
 <nav>
-    <a class="nav-brand" href="{{ route('posts.index') }}">📝 CRUD App</a>
+    <a class="nav-brand" href="{{ route('posts.index') }}">CRUD App</a>
     <div>
         @auth
             {{-- Tampil jika sudah login --}}

@@ -1,0 +1,17 @@
+
+   PASS  Tests\Feature\AuthTest
+  ✓ user can register                                                    0.78s  
+  ✓ user can login                                                       0.03s  
+
+   PASS  Tests\Feature\ExampleTest
+  ✓ the application returns a successful response                        0.03s  
+
+   PASS  Tests\Feature\PostCrudTest
+  ✓ guest cannot access create page                                      0.02s  
+  ✓ authenticated user can create post                                   0.02s  
+  ✓ user can edit own post                                               0.03s  
+  ✓ user cannot edit others post                                         0.02s  
+
+  Tests:    7 passed (17 assertions)
+  Duration: 1.07s
+

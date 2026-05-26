@@ -6,7 +6,7 @@
 @section('content')
 <div style="max-width:400px; margin:0 auto;">
     <div class="card">
-        <h1 style="margin-bottom:20px; font-size:1.4rem;">🔐 Login</h1>
+        <h1 style="margin-bottom:20px; font-size:1.4rem;">Login</h1>
 
         {{-- Form login - submit ke route 'login' dengan method POST --}}
         <form action="{{ route('login') }}" method="POST">

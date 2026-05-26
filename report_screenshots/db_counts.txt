@@ -1,0 +1,4 @@
+table_name	cnt
+posts	0
+table_name	cnt
+users	0

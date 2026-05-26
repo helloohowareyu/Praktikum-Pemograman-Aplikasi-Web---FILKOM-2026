@@ -5,7 +5,7 @@
 
 @section('content')
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-        <h1 style="font-size:1.5rem;">📋 Daftar Post</h1>
+        <h1 style="font-size:1.5rem;">Daftar Post</h1>
 
         {{-- Tombol tambah post hanya muncul jika sudah login --}}
         @auth

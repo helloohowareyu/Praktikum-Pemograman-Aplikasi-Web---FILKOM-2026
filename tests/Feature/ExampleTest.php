@@ -13,7 +13,9 @@ class ExampleTest extends TestCase
     public function test_the_application_returns_a_successful_response(): void
     {
         $response = $this->get('/');
+        $response->assertRedirect(route('posts.index'));
 
-        $response->assertStatus(200);
+        // follow redirect and assert OK on posts index
+        $this->get(route('posts.index'))->assertStatus(200);
     }
 }
