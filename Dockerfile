@@ -28,7 +28,7 @@ RUN docker-php-ext-configure gd --with-jpeg --with-freetype \
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
-COPY composer*.json ./
+COPY composer.json composer.lock ./
 RUN composer install --prefer-dist --no-dev --no-scripts --no-progress --no-interaction
 COPY . .
 COPY --from=node-builder /var/www/html/public/build ./public/build
